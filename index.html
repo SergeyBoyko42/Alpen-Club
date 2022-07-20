@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Alpen CluB</title>
+	<meta name="description" content="Отзыв Alpen Club" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<header class="header">
+		<hr class="header__redLine">
+		<div class="header__logo">
+			<img class="header__logo__alpenLogo" src="/img/logo.png" alt="logo">
+		</div>
+		<h1>СПАСИБО, ЧТО ПОБЫВАЛИ<br> У НАС В ГОСТЯХ!</h1>
+		<h3 class="mobi">Оставьте, пожалуйста, обратную связь о Вашем отдыхе.</h3>
+	</header>
+	<main class="main">
+		<div class="item item-1">
+			<div class="numbers ">
+				<div class="numbers__point ">
+					1
+				</div>
+				<div class="numbers__line line-ok">
+					<!-- Линия, связывающая 1 и 2-->
+				</div>
+				<div class="numbers__point ">
+					2
+				</div>
+			</div>
+		</div>
+		<div class="item item-2">
+			<div class="identificate__words">
+				<h2>Идентификация</h2>
+				<h3>Оставьте Ваш номер телефона <br>для обратной связи</h3>
+			</div>
+		</div>
+		<div class="item item-3">
+			<input id='phone' name="phone__number" class="identificate__phone__tel" type="text"
+				placeholder="+7 (999)-768-7777">
+
+		</div>
+		<div class="item item-4">
+			<div class="rate__words">
+				<h2>Пребывание у нас</h2>
+				<h3>Оцените по 5-ти бальной шкале <br>качество отдыха у нас</h3>
+			</div>
+		</div>
+		<div class="item item-5">
+			<div class="rate__star">
+				<div class="star">
+					<label for="star_5" class="star__icon"></label>
+					<label for="star_4" class="star__icon"></label>
+					<label for="star_3" class="star__icon"></label>
+					<label for="star_2" class="star__icon"></label>
+					<label for="star_1" class="star__icon"></label>
+				</div>
+
+				<input type="radio" class='star__input' name="star" id="star_1" value="1">
+				<input type="radio" class='star__input' name="star" id="star_2" value="2">
+				<input type="radio" class='star__input' name="star" id="star_3" value="3">
+				<input type="radio" class='star__input' name="star" id="star_4" value="4">
+				<input type="radio" class='star__input' name="star" id="star_5" value="5">
+			</div>
+		</div>
+
+	</main>
+	<div class="masscomment">
+		<p>Ваш отзыв принят!</p>
+		<div class="validForm">Пожалуйста, заполните все поля</div>
+	</div>
+	<section class="footer">
+		<div class="rateInfo">
+			<div class="comment comment-hidden">
+				<textarea rows="5" name="comment" class="comment__area"
+					placeholder="Нам очень важно Ваше мнение, чтобы становиться лучше. На что нам следует обратить внимание? Напишите, мы постараемся это исправить."></textarea>
+			</div>
+
+			<p class="review review-hidden">Поделитесь Вашим впечатлением
+				о нашей работе на <b> Trip</b><span class="TripAdvizor">Advizor</span><br>
+				Это поможет другим людям сделать
+				правильный выбор.
+			</p>
+
+		</div>
+
+		<div class="button">
+			<button type="submit" onclick="sendData()" class="button__feedback">Оставить отзыв</button>
+			<div class="button__arrow arrow-hidden "></div>
+		</div>
+		<div class="forest"></div>
+
+	</section>
+	<!-- <div class="forest"> -->
+	<!-- </div> -->
+
+
+</body>
+<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+<script src="/libs/jquery.maskedinput.js"></script>
+<script src="/libs/jquery.maskedinput.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
